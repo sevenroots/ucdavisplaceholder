@@ -988,6 +988,9 @@ html, .solid-back{
 	background-color: #1e335c;
 }
 .grid-back{
+	padding-left:0 !important;
+	padding-right:0 !important;
+	padding-top:10vh;
 	--color-one: rgba(255,255,255,.2);
 	background-color:#264f88;
 	background-size: 100px 100px;
@@ -1003,4 +1006,33 @@ html, .solid-back{
 }
 .grid-back{
 	min-height:100vh;
+}
+[class|="diag-hr"]{
+	position:absolute;
+	transform:translateX(-50%);
+	left:50%;
+	width:100vw;
+	padding:0;
+	margin:0;
+	border:2px solid white;
+	border-left:0;
+	border-right:0;
+	height:6px;
+	background: repeating-linear-gradient(
+	-45deg,
+	white,
+	white 1.5px,
+	#334d7a 1.5px,
+	#334d7a 3px
+  );
+}
+.diag-hr-above{
+	margin-top:-10px;
+}
+header, .site-content{
+	background-color: #728ca6 ;
+}
+.site-branding{
+	position:relative;
+	top:-30px;
 }
