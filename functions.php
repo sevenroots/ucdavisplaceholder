@@ -122,6 +122,8 @@ add_action( 'widgets_init', 'ucdavisplaceholder_widgets_init' );
 function ucdavisplaceholder_scripts() {
 	wp_enqueue_style( 'ucdavisplaceholder-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.2.1', 'all' );
+
 	wp_enqueue_script( 'ucdavisplaceholder-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'ucdavisplaceholder-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

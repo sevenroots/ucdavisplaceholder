@@ -983,3 +983,24 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+html, .solid-back{
+	background-color: #1e335c;
+}
+.grid-back{
+	--color-one: rgba(255,255,255,.2);
+	background-color:#264f88;
+	background-size: 100px 100px;
+	background-image: linear-gradient(to right, var(--color-one) 2.5px, transparent 2.5px, transparent 19px, var(--color-one) 19px, transparent 20px,
+	  transparent 39px, var(--color-one) 39px, transparent 40px,
+	  transparent 59px, var(--color-one) 59px, transparent 60px,
+	  transparent 79px, var(--color-one) 79px, transparent 80px
+	), linear-gradient(to bottom, var(--color-one) 2.5px, transparent 2.5px, transparent 19px, var(--color-one) 19px, transparent 20px,
+	  transparent 39px, var(--color-one) 39px, transparent 40px,
+	  transparent 59px, var(--color-one) 59px, transparent 60px,
+	  transparent 79px, var(--color-one) 79px, transparent 80px);
+	background-position:center;
+}
+.grid-back{
+	min-height:100vh;
+}
