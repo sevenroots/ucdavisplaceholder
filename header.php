@@ -23,8 +23,9 @@
 <body <?php body_class('solid-back container-fluid'); ?>>
 <div id="page" class="site container grid-back">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ucdavisplaceholder' ); ?></a>
-	<hr class="diag-hr-above" />
+	
 	<header id="masthead" class="site-header">
+		<hr class="diag-hr-above" />
 		<div class="site-branding text-center">
 			<?php
 			the_custom_logo();
