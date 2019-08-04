@@ -23,7 +23,11 @@
 		</div><!-- .site-info -->
 		
 	</footer><!-- #colophon -->
+	</div>
+	<div class="col-xs-0 col-lg-2">
+	</div>
 </div><!-- #page -->
+</div>
 
 <?php wp_footer(); ?>
 

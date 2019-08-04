@@ -21,7 +21,11 @@
 </head>
 
 <body <?php body_class('solid-back container-fluid'); ?>>
-<div id="page" class="site container grid-back">
+<div id="page" class="site container">
+	<div class="row">
+		<div class="col-xs-0 col-lg-2">
+		</div>
+		<div class="col-xs-12 col-lg-8 grid-back">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ucdavisplaceholder' ); ?></a>
 	
 	<header id="masthead" class="site-header">

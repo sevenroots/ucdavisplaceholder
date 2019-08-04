@@ -401,6 +401,18 @@ textarea {
 	font-size: 1rem;
 	line-height: 1.5;
 }
+@font-face{                                                                                                                                                                                             
+     font-family: 'proximaNovaLight';
+     src: local('proximanova-light'), 
+         url("css/fonts/proximanova-light.otf") format('opentype');  
+     font-weight: normal;   
+}
+@font-face{                                                                                                                                                                                             
+     font-family: 'proximaNovaBold';
+     src: local('proximanova-semibold'), 
+         url("css/fonts/proximanova-semibold.otf") format('opentype');  
+     font-weight: normal;   
+}
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
@@ -1027,21 +1039,22 @@ html, .solid-back{
 	bottom:-10px;
 }
 header, .site-content{
-	background-color: #728ca6 ;
+	background-color: #98a6b4 ;
 }
 .site-content{
 	padding-bottom:5vh;
 }
 .site-branding{
 	position:relative;
-	top:-30px;
+	top:-9vh;
 }
 .site-header{
 	position: relative;
+	margin-bottom: -6vh;
 }
 .custom-logo{
-	-webkit-filter: drop-shadow(0px -5px 5px #222);
-	filter: drop-shadow(0px -5px 5px #eee);
+	-webkit-filter: drop-shadow(0px -1px 2px #eee);
+	filter: drop-shadow(0px -1px 2px #eee);
 }
 .copyright{
 	color:white;
@@ -1066,7 +1079,8 @@ footer{
 	margin-bottom:5px;
 }
 .site-main p{
-	font-size:18px;
+	font-size:14px;
+    font-family:'proximaNovaLight';
 }
 .site-main a{
 	font-weight: bold;
@@ -1074,10 +1088,22 @@ footer{
 .clr-white{
 	color:white !important;
 }
+h2{
+	font-size:1.25rem !important;
+    font-family:'proximaNovaBold' !important;
+}
+@media all and (max-width: 600px) {
+    h2{
+        margin-top:1rem !important;
+    }
+}
+
+.book-cover{
+    width:100%;
+    height:auto;
+}
 #website-message{
-	width:100%;
-	font-size:32px;
-	position:absolute;
-	bottom:0;
-	left:0;
+    font-size: 16px;
+    font-family:'proximaNovaBold' !important;
+
 }
